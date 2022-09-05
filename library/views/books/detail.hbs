@@ -1,0 +1,9 @@
+<h1>All the info for {{book.title}} 🦄</h1>
+<h3>Written by: {{book.author}}</h3>
+{{!-- you can also set a context for book --}}
+{{#with book}}
+<h3>Content: {{description}}</h3>
+<h3>Rating: {{rating}}</h3>
+<a href="/books/edit/{{_id}}">Edit this book 📝</a>
+<a href="/books/delete/{{id}}">Delete this book ❌</a>
+{{/with}}
